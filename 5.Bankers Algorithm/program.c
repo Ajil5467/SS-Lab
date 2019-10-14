@@ -9,6 +9,7 @@ struct file
         int need[10];
         int flag;
 } f[10];
+//source code
 void main()
 {
         int fl;
