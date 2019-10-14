@@ -52,7 +52,7 @@ total=0;
 			cur=a[i];
 		}
 		total=total+nc-1-cur;//nc-1 is the last number of cyllinder
- 		cur=nc-1;
+ 		cur=nc-1;//the current request is set to last cyllinder
 		for(i=t-1;i>=0;i--)//add the headmovement from t-1 th cyllinder to starting cyllinder(0)
 		{
 			if(cur>a[i])
