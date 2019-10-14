@@ -19,11 +19,13 @@ main()//driver code
             break;
             else
                 printf("Buffer full\n");
-        case 2: //Consume if((mutex==1)&&(full!=0))
-            consumer();//go to the function defined below
-            break;
+        case 2: //Consume
+                if((mutex==1)&&(full!=0))
+                    consumer();//go to the function defined below
+           
             else
                 printf("Buffer empty\n");
+                break;
         case 3:
             exit(0);
             break;
