@@ -22,14 +22,14 @@ for(i=0;i<n;i++)
 	scanf("%d",&a[i]);//read the request into array
 }
 total=0;
-		for(i=0;i<n;i++)
+		for(i=0;i<n;i++)//add the head movement from current position to cyllinder in the request array
 		{
 			if(cu>a[i])
-				total=total+cu-a[i];//add the head movement from current position to cyllinder in the request array
+				total=total+cu-a[i];
 			else
 				total=total+a[i]-cu;
       cu=a[i];//set current position to currently accessed request.
 		}
-		tot();
+		tot();//function for print total seek time
 }
 	
