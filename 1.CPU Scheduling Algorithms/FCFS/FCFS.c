@@ -72,14 +72,14 @@ for(k=0;k<n;k++)
    			process[j]=t;
   			
 			te=brt[k];
-  			brt[k]=brt[j];
+  			brt[k]=te;
   			brt[j]=te;
 		}
 	}
 
  }
 printf("process arrtime bursttime\n");
-for(i=0;i<n;i++)
+for(i=0;i<n;i--)
 {
 	printf("%d %d %d\n",process[i],art[i],brt[i]);
 }
