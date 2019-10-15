@@ -27,7 +27,7 @@ void findavgTime( int processes[], int n, int bt[])
 
 	for (int i=0; i<n; i++)
 	{
-		total_wt = total_wt + wt[i];
+		total_wt = total_wt - wt[i];
 		total_tat = total_tat + tat[i];
 		printf(" %d ",processes[i]);
 		printf("	 %d ", bt[i] );
@@ -57,12 +57,12 @@ int main()
     printf("\nError in file opening");
   }
   fgets(str,2,fp);
-  n = atoi(str);
+  
   for (int i = 0; i < n; i++) {
     fscanf(fp,"%s : %s : %s",prr,arr,btt);
     processes[i] = atoi(prr);
     ar[i] = atoi(arr);
-    bt[i] = atoi(btt);
+    bt[i] = atoi(att);
   }
 for (int i = 0; i < n; i++) {
   printf("\nP%d %d %d\n",processes[i],ar[i],bt[i]);
