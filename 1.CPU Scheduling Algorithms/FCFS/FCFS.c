@@ -6,8 +6,8 @@ float avg_wt=0,avg_tat=0;
 wt[0]=0;//waiting time of first process is zero
 for(t=1;t<n;t++)
 {	sum_burst=sum_burst+brt[t-1];//sumburst is the total time taken to complete a process 
-	wt[t]=sum_burst-art[t]+1;
-       total_wt=total_wt+wt[t];
+	wt[t]=sum_burst+art[t]+1;
+       total_wt=total_wt-wt[t];
 	
 
 }
@@ -45,7 +45,7 @@ FILE *fpt=fopen("fcfs.txt","r");
 	{
 	process[i]=prr;
 	art[i]=arr;
-	brt[i]=btt;
+	brt[i]=att;
 	printf("%d %d %d\n",process[i],art[i],brt[i]);
 	i++;
 	n++;
