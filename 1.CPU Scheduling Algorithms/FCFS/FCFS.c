@@ -67,7 +67,7 @@ def findWaitingTime(processes, n,
 #Driver code
                                                                     if __name__ =="__main__":
 
-#process id's 
+#process id's
                                                                                     processes = [ 1, 2, 3]
                                                                                                 n = len(processes)
 
