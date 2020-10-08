@@ -1,0 +1,41 @@
+Optimal page replacement algorithm is a page replacement algorithm. A page replacement algorithm is an algorithm which decides which memory page is to be replaced. In Optimal page replacement we replace the page which is not referred to the near future, although it can’t be practically implemented, but this is most optimal and have minimal miss, and is most optimal.
+
+Start
+Step 1-> In function int predict(int page[], vector<int>& fr, int pn, int index)
+   Declare and initialize res = -1, farthest = index
+   Loop For i = 0 and  i < fr.size() and i++
+      Loop For j = index and j < pn and j++
+         If fr[i] == page[j] then,
+            If j > farthest
+               Set farthest = j
+            End If
+            Set res = i
+            break
+         If j == pn then,
+         Return i
+   Return (res == -1) ? 0 : res
+Step 2-> In function bool search(int key, vector<int>& fr)
+   Loop For i = 0 and i < fr.size() and i++
+   If fr[i] == key then,
+      Return true
+      Return false
+Step 3-> In function void opr(int page[], int pn, int fn)
+   Declare vector<int> fr
+   Set hit = 0
+   Loop For i = 0 and i < pn and i++
+   If search(page[i], fr) then,
+      Increment hit by 1
+      continue
+   If fr.size() < fn then,
+      fr.push_back(page[i])
+   Else
+      Set j = predict(page, fr, pn, i + 1)
+      Set fr[j] = page[i]
+      Print the number of hits
+      Print the number of misses
+Step 4-> In function int main()
+   Declare and assign page[] = { 1, 7, 8, 3, 0, 2, 0, 3, 5, 4, 0, 6, 1 }
+   Set pn = sizeof(page) / sizeof(page[0])
+   Set fn = 3
+   opr(page, pn, fn)
+Stop
