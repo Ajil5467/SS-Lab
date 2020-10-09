@@ -1,3 +1,4 @@
+[![Ajil's github stats](https://github-readme-stats.vercel.app/api?username=Ajil5467)](https://github.com/Ajil5467/github-readme-stats)
 # SS-Lab
 
 KTU system software lab programs explained
