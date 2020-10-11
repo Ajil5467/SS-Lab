@@ -11,22 +11,7 @@ int flag;
 
 
 
-	//Entering details of all processes
-	{
-		
-	}
-	printf("\nEnter Available Resources\t: \t");
-	for(i=0;i<r;i++)
-		scanf("%d",&avail[i]);
-	printf("\nEnter New Request Details : ");
-	printf("\nEnter pid \t : \t");
-	scanf("%d",&id);
-	printf("Enter Request for Resources \t: \t");
-	for(i=0;i<r;i++)
-	{
-		scanf("%d",&newr);
-	f[id].all[i] += newr;
-	avail[i]=avail[i]-newr;
+	
 	}
 	for(i=0;i<n;i++)
 	{
