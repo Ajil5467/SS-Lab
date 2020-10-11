@@ -3,23 +3,7 @@
 #include<string.h>
 
 
-char hexadecimalnum[100];
-int arrlen = 0;
-int decToHexa(int n){
-
-    long decimalnum, quotient, remainder;
-    int i, j = 0;
-    
-    decimalnum = (long) n;
-    quotient = decimalnum;
- 
-    while (quotient != 0){
-        remainder = quotient % 16;
-        if (remainder < 10)
-            hexadecimalnum[j++] = 48 + remainder;
-        else
-            hexadecimalnum[j++] = 55 + remainder;
-        quotient = quotient / 16;
+c
     }
     // display integer into character
     arrlen = j;
