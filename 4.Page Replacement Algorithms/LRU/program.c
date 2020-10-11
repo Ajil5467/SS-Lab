@@ -6,31 +6,7 @@
    In this algorithm page will be replaced which is least recently used.*/
 #include <stdio.h>
 
-int main()
-{
-        int frames[10], temp[10], pages[10];
-        int total_pages, m, n, position, k, l, total_frames;
-        int a = 0, b = 0, page_fault = 0;
-        printf("\nEnter Total Number of Frames:\t");
-        scanf("%d", &total_frames);
-        for(m = 0; m < total_frames; m++)
-        {
-                frames[m] = -1; //initialize frame with -1.
-        }
-        printf("Enter Total Number of Pages:\t");
-        scanf("%d", &total_pages);
-        printf("Enter Values for Reference String:\n");
-        for(m = 0; m < total_pages; m++)
-        {
-                printf("Value No.[%d]:\t", m + 1);
-                scanf("%d", &pages[m]);
-        }
-        for(n = 0; n < total_pages; n++)
-        {
-                a = 0, b = 0;
-                for(m = 0; m < total_frames; m++)
-                {
-                        if(frames[m] == pages[n]) //page is already in frame .HIT occured
+int main() //page is already in frame .HIT occured
                         {
                                 a = 1;
                                 b = 1;

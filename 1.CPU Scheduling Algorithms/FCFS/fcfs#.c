@@ -14,21 +14,7 @@ void findWaitingTime(int processes[], int n,
         wt[i] =  bt[i-1] + wt[i-1] ;  
 }  
     
-// Function to calculate turn around time  
-void findTurnAroundTime( int processes[], int n,   
-                  int bt[], int wt[], int tat[])  
-{  
-    // calculating turnaround time by adding  
-    // bt[i] + wt[i]  
-    for (int  i = 0; i < n ; i++)  
-        tat[i] = bt[i] + wt[i];  
-}  
-    
-//Function to calculate average time  
-void findavgTime( int processes[], int n, int bt[])  
-{  
-    int wt[n], tat[n], total_wt = 0, total_tat = 0;  
-    
+
     //Function to find waiting time of all processes  
     findWaitingTime(processes, n, bt, wt);  
     

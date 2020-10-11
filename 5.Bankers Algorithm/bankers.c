@@ -11,27 +11,9 @@ int flag;
 
 
 
-void main()
-{	//initialization of variables
-	int fl;
-	int i, j, k, p, b, n, r, g, cnt=0, id, newr;
-	int avail[10],seq[10];
-	printf("\nEnter number of processes: ");
-	scanf("%d",&n);
-	printf("Enter number of resources: ");
-	scanf("%d",&r);
-	
-	for(i=0;i<n;i++)
 	//Entering details of all processes
 	{
-		printf("Enter details for P%d",i);
-		printf("\nEnter allocation\t: \t");
-		for(j=0;j<r;j++)
-			scanf("%d",&f[i].all[j]);
-		printf("Enter Max\t\t: \t");
-		for(j=0;j<r;j++)
-			scanf("%d",&f[i].max[j]);
-		f[i].flag=0;
+		
 	}
 	printf("\nEnter Available Resources\t: \t");
 	for(i=0;i<r;i++)
