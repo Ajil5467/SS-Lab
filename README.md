@@ -1,6 +1,6 @@
 # SS-Lab
 
-KTU system software lab programs explained
+KTU system software lab programs has been explained in this Repository.
 ## Content
 
 - **[CPU Scheduling](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms)**
